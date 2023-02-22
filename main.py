@@ -4,11 +4,11 @@ import file_reader
 # Read configuration
 config = configparser.ConfigParser()
 config.read('config.ini')
-source_filename = config['source']['filename']
+source_filename = config['source']['src']
 
 # Read source file
 source_content = file_reader.read_file(source_filename)
-destination_filename = config['destination']['filename']
+destination_filename = config['destination']['dest']
 
 # Parse source content
 lines = source_content.splitlines()
