@@ -19,3 +19,4 @@ values = lines[1].split(',')
 with open(destination_filename, 'w') as f:
     f.write(','.join(keys) + '\n')
     f.write(','.join(values) + '\n')
+    
